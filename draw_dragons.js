@@ -2,6 +2,7 @@ var c = document.getElementById("canvas");
 var ctx = c.getContext("2d");
 
 function drawDragon(directions) {
+    clearDragon();
     var step = 10;
 
     ctx.beginPath();
@@ -48,4 +49,8 @@ function drawDragon(directions) {
     }
 
     ctx.stroke();
+}
+
+function clearDragon() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 }

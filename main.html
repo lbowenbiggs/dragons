@@ -1,0 +1,17 @@
+<html>
+<head>
+<script defer src="expand_dragons.js"></script>
+<script defer src="draw_dragons.js"></script>
+</head>
+
+<body>
+<input type="text" id="dragon_id" onkeyup="this.value = this.value.replace(/[^01]/, '')" />
+<button onclick="drawDragon(expandDragon());">Expand</button>
+<button onclick="clearDragon();">Clear</button>
+<p id="dragon_body"></p>
+
+<center>
+<canvas id="canvas" width="500" height="500" style="border:1px solid #000000;"></canvas>
+</center>
+</body>
+</html>
