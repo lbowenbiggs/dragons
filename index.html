@@ -1,16 +1,14 @@
-<html>
-<head>
-<script defer src="expand_dragons.js"></script>
-<script defer src="draw_dragons.js"></script>
-</head>
+---
+layout: default
+title: Dragon Curves
+---
 
-<body>
 <input type="text" id="dragon_id" onkeyup="this.value = this.value.replace(/[^01]/, '')" />
-<button onclick="drawDragon(expandDragon());">Expand</button>
+<button onclick="drawDragon(expandDragon());" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Expand</button>
+<button onclick="clearDragon();" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Clear</button>
 <p id="dragon_body"></p>
 
 <center>
 <canvas id="canvas" width="500" height="500" style="border:1px solid #000000;"></canvas>
 </center>
-</body>
-</html>
+

@@ -1,0 +1,3 @@
+name: Dragon Curve
+markdown: kramdown
+baseurl: "/dragons" # the subpath of your site, e.g. /blog

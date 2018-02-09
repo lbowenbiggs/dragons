@@ -1,7 +1,7 @@
-input = document.getElementById("dragon_id");
-display = document.getElementById("dragon_body");
-
 function expandDragon() {
+    var input = document.getElementById("dragon_id");
+    var display = document.getElementById("dragon_body");
+
     input = document.getElementById("dragon_id");
     signiture = input.value;
 
@@ -18,8 +18,6 @@ function expandDragon() {
             }
         }
     }
-
-    console.log(dragon);
 
     display = document.getElementById("dragon_body");
     display.innerHTML = dragon;
